@@ -1,5 +1,7 @@
 ## HEAD
 
+  * Textile is only supported through a converter plugin (#7003)
+
 ### Documentation
 
   * Release post for v3.8.0 (#6849)
@@ -7,14 +9,84 @@
   * add liquid tag jekyll-flickr (#6946)
   * Add 4.0 development post (#6934)
   * Updated copy - fixed casing of SaaS on resources page. (#6949)
+  * WIP: Do not advise users to install Jekyll outside of Bundler (#6927)
+  * Don&#39;t prompt for sudo when installing with Ubuntu WSL (#6781)
+  * Fix typo (#6969)
+  * Add version number for group_by_exp doc (#6956)
+  * Update Windows install docs (#6926)
+  * Remove documentation for using Redcarpet (#6990)
+  * Updated nginx configuration for custom-404-page documentation (#6994)
+  * List all static files variables (#7002)
+  * Document that _drafts need to be contained within the custom collection directory (#6985)
+  * proposed change for passive voice. (#7005)
+  * added the CAT plugin to the plugin list (#7011)
+  * Updated to supported version (#7031)
+  * Clarify definition of &#39;draft&#39; (#7037)
+  * Listed the jekyll-target-blank plugin in plugins list. (#7046)
+  * Typo (#7058)
+  * Add Hints for some Improved Travis Config in Doc (#7049)
+  * Added plugin json-get. (#7086)
+  * Update travis-ci.md to point out &#34;this is an example Gemfile&#34; (#7089)
+  * Adding `jekyll-info` plugin (#7091)
 
 ### Minor Enhancements
 
   * use jekyll-compose if installed (#6932)
+  * Memoize computing excerpt&#39;s relative_path (#6951)
+  * Liquefied link tag (#6269)
+  * Suggest re-running command with --trace on fail (#6551)
+
+### Major Enhancements
+
+  * Remove unused error class (#6511)
+  * Drop support for Ruby 2.1 and 2.2 (#6560)
+  * Add vendor folder to a newly installed site&#39;s .gitignore (#6968)
+  * bump i18n (#6931)
+  * We are not using Ruby 2.2 anymore (#6977)
+  * Drop support for older versions of Rouge (#6978)
+  * Remove support for Redcarpet (#6987)
+  * Remove support for rdiscount (#6988)
+
+### Development Fixes
+
+  * Remove unnecessary Jekyll::Page constant (#6770)
+  * Loggers should accept both numbers and symbols (#6967)
+  * Update instructions for releasing docs Gem (#6975)
+  * yajl-ruby update to v1.4.0 (#6976)
+  * Load Rouge for TestKramdown (#7007)
+  * Useless privates removed (#6768)
+  * Allow i18n v0.9.5 and higher (#7044)
+  * Update Rubocop&#39;s config (#7050)
+  * Remember to release docs gem (#7066)
+  * Use assert_include (#7093)
+  * Update rubocop version to 0.57.x (#7078)
+
+### -docs
+
+  * Example of CircleCI deployment through CircleCI v2 (#7024)
+
+## 3.8.3 / 2018-06-05
+
+### Bug Fixes
+
+  * Fix --unpublished not affecting collection documents (#7027)
+
+## 3.8.2 / 2018-05-18
+
+### Development Fixes
+
+  * Update rubocop version (#7016)
+
+### Bug Fixes
+
+  * Add whitespace control to LIQUID_TAG_REGEX (#7015)
+
+## 3.8.1 / 2018-05-01
 
 ### Bug Fixes
 
   * Fix rendering Liquid constructs in excerpts (#6945)
+  * Liquify documents unless published == false (#6959)
 
 ## 3.8.0 / 2018-04-19
 
