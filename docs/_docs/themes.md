@@ -7,7 +7,7 @@ Jekyll has an extensive theme system that allows you to leverage community-maint
 
 ## Understanding gem-based themes
 
-When you [create a new Jekyll site](/docs/quickstart) (by running the `jekyll new <PATH>` command), Jekyll installs a site that uses a gem-based theme called [Minima](https://github.com/jekyll/minima).
+When you [create a new Jekyll site](/docs/) (by running the `jekyll new <PATH>` command), Jekyll installs a site that uses a gem-based theme called [Minima](https://github.com/jekyll/minima).
 
 With gem-based themes, some of the site's directories (such as the `assets`, `_layouts`, `_includes`, and `_sass` directories) are stored in the theme's gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll's build process.
 
@@ -25,7 +25,7 @@ In the case of Minima, you see only the following files in your Jekyll site dire
 
 The `Gemfile` and `Gemfile.lock` files are used by Bundler to keep track of the required gems and gem versions you need to build your Jekyll site.
 
-Gem-based themes make it easy for theme developers to make updates available to anyone who has the theme gem. When there's an update, theme developers push the update to RubyGems.
+Gem-based themes make it easier for theme developers to make updates available to anyone who has the theme gem. When there's an update, theme developers push the update to RubyGems.
 
 If you have the theme gem, you can (if you desire) run `bundle update` to update all gems in your project. Or you can run `bundle update <THEME>`, replacing `<THEME>` with the theme name, such as `minima`, to just update the theme gem. Any new files or updates the theme developer has made (such as to stylesheets or includes) will be pulled into your project automatically.
 
@@ -149,7 +149,7 @@ end
 
 Either way, don't forget to `bundle update`.
 
-However, if you're publishing on GitHub Pages you should update only your `_config.yml` as GitHub Pages doesn't load plugins via Bundler.
+If you're publishing on GitHub Pages you should update only your `_config.yml` as GitHub Pages doesn't load plugins via Bundler.
 
 Finally, remove references to the theme gem in `Gemfile` and configuration. For example, to remove `minima`:
 
@@ -208,7 +208,7 @@ If you're publishing your Jekyll site on [GitHub Pages](https://pages.github.com
 
 ## Creating a gem-based theme
 
-If you're a Jekyll theme developer (rather than just a consumer of themes), you can package up your theme in RubyGems and allow users to install it through Bundler.
+If you're a Jekyll theme developer (rather than a consumer of themes), you can package up your theme in RubyGems and allow users to install it through Bundler.
 
 If you're unfamiliar with creating Ruby gems, don't worry. Jekyll will help you scaffold a new theme with the `new-theme` command. Run `jekyll new-theme` with the theme name as an argument.
 
@@ -238,14 +238,14 @@ Add your template files in the corresponding folders. Then complete the `.gemspe
 
 Theme layouts and includes work just like they work in any Jekyll site. Place layouts in your theme's `/_layouts` folder, and place includes in your themes `/_includes` folder.
 
-For example, if your theme has a `/_layouts/page.html` file, and a page has `layout: page` in its YAML front matter, Jekyll will first look to the site's `_layouts` folder for the `page` layout, and if none exists, will use your theme's `page` layout.
+For example, if your theme has a `/_layouts/page.html` file, and a page has `layout: page` in its front matter, Jekyll will first look to the site's `_layouts` folder for the `page` layout, and if none exists, will use your theme's `page` layout.
 
 ### Assets
 
 Any file in `/assets` will be copied over to the user's site upon build unless they have a file with the same relative path. You can ship any kind of asset here: SCSS, an image, a webfont, etc. These files behave like pages and static files in Jekyll:
 
-- If the file has [YAML front matter](/docs/frontmatter/) at the top, it will be rendered.
-- If the file does not have YAML front matter, it will simply be copied over into the resulting site.
+- If the file has [front matter](/docs/front-matter/) at the top, it will be rendered.
+- If the file does not have front matter, it will simply be copied over into the resulting site.
 
 This allows theme creators to ship a default `/assets/styles.scss` file which their layouts can depend on as `/assets/styles.css`.
 
