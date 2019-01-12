@@ -1,9 +1,5 @@
 ## HEAD
 
-  * Textile is only supported through a converter plugin (#7003)
-  * Add info how to deploy using pre-push git hook (#7179)
-  * chore(release): reflect latest patched releases (#7262)
-
 ### Documentation
 
   * Release post for v3.8.0 (#6849)
@@ -70,6 +66,35 @@
   * &#34;This restricts you...&#34; to &#34;This restricts your&#34; (#7307)
   * Add a link to Giraffe Academy&#39;s tutorial (#7325)
   * grammar correction (#7327)
+  * docs: list all standard liquid filters (#7333)
+  * Document Jekyll Filters with YAML data (#7335)
+  * Remove redundant instruction comment (#7342)
+  * docs: minimize rendering count (#7343)
+  * Update posts.md (#7360)
+  * Add info how to deploy using pre-push git hook (#7179)
+  * Textile is only supported through a converter plugin (#7003)
+  * Add documentation for custom tag blocks (#7359)
+  * Added 99inbound&#39;s Jekyll post to form resources (#7348)
+  * docs: document page.dir and page.name (#7373)
+  * Remove installation instructions with Homebrew (#7381)
+  * Fix dead link and misleading prose (#7383)
+  * Fix content management section (#7385)
+  * Site: Better Performance (#7388)
+  * Proposed re-wording of Sass note. :) (#7392)
+  * Apply ruby official guide documents (#7393)
+  * docs: Fix group_by_exp filter example (#7394)
+  * adjust team page listings (#7395)
+  * Update resources.md (#7396)
+  * Update resources.md (#7397)
+  * Remove alt attribute from a tags (#7407)
+  * Fix grammatical error in permalinks.md (#7409)
+  * [Docs] Fix BASH code-block in ubuntu.md (#7420)
+  * zlib is missing (#7428)
+  * Include docs for `{{ page.collection }}` (#7430)
+  * Permalink docs typo fixes (#7459)
+  * Fixed unnecessary aticles and pronouns (#7466)
+  * Grammatical correction (#7464)
+  * Update resources.md (#7472)
 
 ### Minor Enhancements
 
@@ -90,6 +115,11 @@
   * Automatically load _config.toml (#7299)
   * feat: enhance --blank scaffolding (#7310)
   * Skip processing posts that can not be read (#7302)
+  * Memoize Site#post_attr_hash (#7276)
+  * Load config file from within current theme-gem (#7304)
+  * Memoize the return value of Site#documents (#7273)
+  * Upgrade liquid-c to v4.0 (#7375)
+  * Add a custom inspect string for StaticFile objects (#7422)
 
 ### Major Enhancements
 
@@ -107,6 +137,8 @@
   * Add Cache class (#7169)
   * Cache converted markdown (#7159)
   * Ignore cache directory (#7184)
+  * Incorporate `relative_url` filter in `link` tag (#6727)
+  * Only read layouts from source_dir or theme_dir (#6788)
 
 ### Development Fixes
 
@@ -134,6 +166,16 @@
   * update yajl-ruby (#7278)
   * Drop support for `jekyll-watch-1.4.0` and older (#7287)
   * CI(Appveyor): shallow clone with 5 last commits (#7312)
+  * Bump RuboCop to v0.60.x (#7338)
+  * Update excludes for CodeClimate Analyses (#7365)
+  * Switch to `:install_if` for wdm gem (#7372)
+  * Bump RuboCop to v0.61.x (#7401)
+  * dev: test oldest and latest Ruby only (#7412)
+  * Reduce array traversal in Jekyll::Reader (#7157)
+  * Create symlink only if target is accessible (#7429)
+  * Test with the new Ruby v2.6 (#7438)
+  * Bump RuboCop to v0.62.x (#7449)
+  * Relax version constraint on classifier-reborn gem (#7471)
 
 ### Bug Fixes
 
@@ -143,6 +185,13 @@
   * Document two methods, simplify one of the methods (#7270)
   * Check key in collections only if it isn&#39;t &#34;posts&#34; (#7277)
   * Revert &#34;Cache converter in renderer&#34; (#7326)
+  * Measure the no. of times a template gets rendered (#7316)
+  * Re-implement handling Liquid blocks in excerpts (#7250)
+  * Theme gems: ensure directories aren&#39;t symlinks (#7419)
+  * Documents should be able to render their date (#7404)
+  * Fix Interpreter warning from Jekyll::Renderer (#7448)
+  * Dont write static files from unrendered collection (#7410)
+  * Excerpt handling of custom and intermediate tags (#7382)
 
 ### feature
 
@@ -152,6 +201,16 @@
 ### Site Enhancements
 
   * Add Release Post for v3.6.3, v3.7.4 and v3.8.4 (#7259)
+  * Fix link to Tidelift in site&#39;s footer (#7377)
+  * :sparkles: Add a link to OpenCollective backing (#7378)
+  * Add @ashmaroli to Core Team listing (#7398)
+  * link site to sponsor listing in readme (#7405)
+
+## 3.8.5 / 2018-11-04
+
+### Bug Fixes
+
+  * Re-implement handling Liquid blocks in excerpts (#7250)
 
 ## 3.8.4 / 2018-09-18
 
